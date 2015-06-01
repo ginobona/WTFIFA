@@ -1,0 +1,26 @@
+html {
+    height: 100%;
+    background: url(soccer_master.jpg) no-repeat center center;
+    background-size: 100% auto;
+}
+/*Needs to be it's own container that wraps around the text at 50% opacity*/
+h1 {
+  font-family: ‘Open Sans’, sans-serif;
+  font-weight: 800;
+  color: White;
+  font-size: 450%;
+}
+/*Needs to be it's own container that wraps around the text at 50% opacity*/
+h3 {
+  font-family: ‘Open Sans’, sans-serif;
+  font-weight: 400;
+  color: White;
+  font-size: 150%;
+}
+/*Needs to be it's own container that wraps around the text at 50% opacity*/
+p {
+  font-family: ‘Open Sans’, sans-serif;
+  font-weight: 400;
+  color: White;
+  font-size: 100%;
+}
