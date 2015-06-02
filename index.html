@@ -9,11 +9,15 @@
     <h1>FIFA?!</h1>
   </head>
   <body>
-    <section id="form1">
+    <form>
+      <section id="form1">
       <header>
         <h3>Find Out How Much Money Your
         <h3>Country Needs To Bribe FIFA</h3>
       </header>
+      <div class="card-container">
+        <div class="card">
+            <div class="front">
     <section>
       <section class="left1">
         <h4>Step 1:</h4>
@@ -182,13 +186,18 @@
         </section>
 
       <section>
-        <button type="Submit" formaction="file:///Users/ginobona/codefellows/project_week/index2.html">
-       Submit</button>
+        <button id="tada">Submit</button>
       </section>
     </section>
+        </div>
+        <div class="back">
+            <p>Based on our propietary algorithm, [INPUT COUNTRY] will need to pay a bribe to FIFA in the amount of [MONETARY AMOUNT][INPUT COUNTRY CURRENCY]. Remember, FIFA only accepts bribes paid in the Swiss franc. So you'll need to give FIFA [MONETARY AMOUNT] francs.</p>
+            <p>Oh, and since [INPUT COUNTRY] only has [NUMBER OF EXISTING STADIUMS] stadiums with a capacity of 60,000+ people, the good people of [INPUT COUNTRY] will need to build [NUMBER OF NEW STADIUMS NEEDED] new stadiums. The cost to build [NUMBER OF NEW STADIUMS NEEDED] is only [MONETARY AMOUNT][HOST COUNTRY CURRENCY]</p>
   </section>
+</form>
      <footer>
       <p>&copy; 2015 What The FIFA?! All rights reserved. Those who disobey will regret it.</p>
     </footer>
+    <script src="spendAmount.js"></script>
   </body>
 </html>
