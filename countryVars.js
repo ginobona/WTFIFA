@@ -281,7 +281,7 @@ function Country(currency, exchange) {
 
 
 var afghanistan = new Country("afghani", 0.02);
-var algeria = new Country("dinar", 0.0095);
+wvar algeria = new Country("dinar", 0.0095);
 var andorra = new Country("euro", 1.03);
 var argentina = new Country("peso", 0.061);
 var australia = new Country("dollar", 0.94);
