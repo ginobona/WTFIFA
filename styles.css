@@ -145,3 +145,29 @@ footer {
   position: relative;
 }
 
+<<<<<<< HEAD
+.card-container {
+
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.card .front {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card .back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+=======
+>>>>>>> 0a31e3d65993db424b02163cb8ee504647d7314b
