@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+    background: url(WTFIFA.jpg) no-repeat center center;
+    background-size: 100% auto;
+}
+
+h2 {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  color: #E6E6E6;
+  font-size: 540%;
+  text-align: left;
+  text-shadow: 8px 14px 8px rgba(0,0,0,0.3);
+  margin: auto;
+  margin-left: 30px;
+}
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  color: White;
+  font-size: 970%;
+  text-align: left;
+  text-shadow: 15px 25px 16px rgba(0,0,0,0.3);
+  margin: auto;
+  margin-left: 30px;
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: #E6E6E6;
+  font-size: 200%;
+  margin: auto;
+}
+
+h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: White;
+  font-size: 180%;
+  margin: auto;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: White;
+  font-size: 100%;
+}
+
+#form1 {
+  width: 610px;
+  border-radius: 15px;
+  color: 255, 255, 255, 1;
+  text-align: center;
+  text-shadow: 8px 14px 8px rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, .4);
+  border: black 2px solid;
+  padding: 2px;
+  margin: auto;
+  margin-left: 30px;
+}
+
+.left1 {
+  display: inline-block;
+  float: left;
+  width: 260px;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.right1 {
+  display: inline-block;
+  border-left-style: solid;
+  border-color: white;
+  float: right;
+  width: 260px;
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: 0;
+  background: #FF0000;
+  border-radius: 15px;
+  box-shadow: 0 2px 0 #000000;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 32;
+  margin: 10px;
+  outline: 5px;
+  padding: 10px 16px;
+  transition: all .ls linear;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #000000;
+  transform: translateY(3px);
+}
+
+select {
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 5px 2px 2px #000000;
+  cursor: pointer;
+  font-size: 48;
+  font: inherit;
+  background-color: #E6E6E6;
+}
+
+footer {
+  font-size: 80%;
+  text-align: left;
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
