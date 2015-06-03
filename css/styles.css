@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background: url(WTFIFA.jpg) no-repeat center center;
+    background: url(../images/WTFIFA.jpg) no-repeat center center;
     background-size: 100% auto;
 }
 
@@ -145,7 +145,6 @@ footer {
   position: relative;
 }
 
-<<<<<<< HEAD
 .card-container {
 
 }
@@ -169,5 +168,3 @@ footer {
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
-=======
->>>>>>> 0a31e3d65993db424b02163cb8ee504647d7314b
