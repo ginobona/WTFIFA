@@ -187,7 +187,3 @@ var stadiumCount = function() {
     return 0;
   }
 }
-
-
-
-
