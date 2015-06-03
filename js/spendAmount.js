@@ -166,7 +166,7 @@ $selector.on('change', function() {
 var $yearSelect;
 var $selectory = $('.year');
 $selectory.on('change', function() {
-  $yearSelect = $('.year option:selected').text();
+  $yearSelect = parseInt($('.year option:selected').text());
 });
 
 bribeResult.addEventListener("click", function(e){
@@ -175,7 +175,7 @@ bribeResult.addEventListener("click", function(e){
   var rand = Math.floor(Math.random() * (100000000 - 80000000) + 80000000);
 
 
-  $front.html('<div class="front"><p>Based on our propietary algorithm, ' + $countrySelect.name + ' will need to pay a bribe to FIFA in the amount of ' + Math.floor(rand * $countrySelect.exchange) + ' ' + $countrySelect.currency + '. Remember, FIFA only accepts bribes paid in the Swiss franc. So you\'ll need to give FIFA ' + rand + ' francs.</p><p>Oh, and since ' + $countrySelect.name + ' only has ' + $countrySelect.numStadiums + ' stadiums with a capacity of 60,000+ people, the good people of ' + $countrySelect.name + ' will need to build ' + stadiumCount() + ' new stadiums. The cost to build ' + stadiumCount() + ' is only ' + stadiumCount() * 1200000000 + ' francs.</p></div>');
+  $front.html('<div class="front"><p>Based on our propietary algorithm, ' + $countrySelect.name + ' will need to pay a bribe to FIFA in the amount of ' + Math.floor(rand * $countrySelect.exchange * inflation()) + ' ' + $countrySelect.currency + '. Remember, FIFA only accepts bribes paid in the Swiss franc. So you\'ll need to give FIFA ' + Math.floor(rand * inflation()) + ' francs.</p><p>Oh, and since ' + $countrySelect.name + ' only has ' + $countrySelect.numStadiums + ' stadiums with a capacity of 60,000+ people, the good people of ' + $countrySelect.name + ' will need to build ' + stadiumCount() + ' new stadiums. The cost to build ' + stadiumCount() + ' is only ' + stadiumCount() * 1200000000 + ' francs.</p></div>');
 });
 
 var stadiumCount = function() {
@@ -188,6 +188,9 @@ var stadiumCount = function() {
   }
 }
 
-
+var inflation = function() {
+  var $year = $('.year option:selected').val();
+  return $year;
+}
 
 
