@@ -4,8 +4,9 @@
 
 //The following functions are based off of countries, built with prototype.constructor
 //Each country takes three arguments
-//The first argument is the currency type
-//The second argument is the exchange rate to the Swiss Franc
+//The first argument is the country name
+//The second argument is the currency type
+//The third argument is the exchange rate to the Swiss Franc
 //The final argument is the number of stadiums within the country
 
 var countries = [];
@@ -16,16 +17,16 @@ function Country(name, currency, exchange, numStadiums) {
   this.numStadiums = numStadiums;
 }
 
-countries.push(new Country('afghanistan', "afghani", 0.02, 5));
-countries.push(new Country('algeria', "dinar", 0.0095, 29));
-countries.push(new Country('andorra', "euro", 1.03, 3));
-countries.push(new Country('argentina', "peso", 0.061, 127));
-countries.push(new Country('australia', "dollar", 0.94, 190));
-countries.push(new Country('austria', "euro", 1.03, 62));
-countries.push(new Country('bahamas', "dollar", 0.94, 2));
-countries.push(new Country('bahrain', "dinar", 0.0095, 6));
-countries.push(new Country('barbados', "dollar", 0.94, 2));
-countries.push(new Country('belgium', "euro", 1.03, 74));
+countries.push(new Country('afghanistan', "afghanis", 0.02, 5));
+countries.push(new Country('algeria', "dinars", 0.0095, 29));
+countries.push(new Country('andorra', "euros", 1.03, 3));
+countries.push(new Country('argentina', "pesos", 0.061, 127));
+countries.push(new Country('australia', "dollars", 0.94, 190));
+countries.push(new Country('austria', "euros", 1.03, 62));
+countries.push(new Country('bahamas', "dollars", 0.94, 2));
+countries.push(new Country('bahrain', "dinars", 0.0095, 6));
+countries.push(new Country('barbados', "dollars", 0.94, 2));
+countries.push(new Country('belgium', "euros", 1.03, 74));
 countries.push(new Country('belize', "dollar", 0.94, 9));
 countries.push(new Country('benin', "franc", 1, 11));
 countries.push(new Country('bolivia', "boliviano", 0.14, 13));
@@ -166,7 +167,7 @@ $selector.on('change', function() {
 var $yearSelect;
 var $selectory = $('.year');
 $selectory.on('change', function() {
-  $yearSelect = $('.year option:selected').text();
+  $yearSelect = parseInt($('.year option:selected').text());
 });
 
 bribeResult.addEventListener("click", function(e){
@@ -175,7 +176,7 @@ bribeResult.addEventListener("click", function(e){
   var rand = Math.floor(Math.random() * (100000000 - 80000000) + 80000000);
 
 
-  $front.html('<div class="front"><p>Based on our propietary algorithm, ' + $countrySelect.name + ' will need to pay a bribe to FIFA in the amount of ' + Math.floor(rand * $countrySelect.exchange) + ' ' + $countrySelect.currency + '. Remember, FIFA only accepts bribes paid in the Swiss franc. So you\'ll need to give FIFA ' + rand + ' francs.</p><p>Oh, and since ' + $countrySelect.name + ' only has ' + $countrySelect.numStadiums + ' stadiums with a capacity of 60,000+ people, the good people of ' + $countrySelect.name + ' will need to build ' + stadiumCount() + ' new stadiums. The cost to build ' + stadiumCount() + ' is only ' + stadiumCount() * 1200000000 + ' francs.</p></div>');
+  $front.html('<div class="front"><p>Based on our propietary algorithm, ' + $countrySelect.name + ' will need to pay a bribe to FIFA in the amount of ' + Math.floor(rand * $countrySelect.exchange * inflation()) + ' ' + $countrySelect.currency + '. Remember, FIFA only accepts bribes paid in the Swiss franc. So you\'ll need to give FIFA ' + Math.floor(rand * inflation()) + ' francs.</p><p>Oh, and since ' + $countrySelect.name + ' only has ' + $countrySelect.numStadiums + ' stadiums with a capacity of 60,000+ people, the good people of ' + $countrySelect.name + ' will need to build ' + stadiumCount() + ' new stadiums. The cost to build ' + stadiumCount() + ' is only ' + stadiumCount() * 1200000000 + ' francs.</p></div>');
 });
 
 var stadiumCount = function() {
@@ -187,3 +188,10 @@ var stadiumCount = function() {
     return 0;
   }
 }
+
+var inflation = function() {
+  var $year = $('.year option:selected').val();
+  return $year;
+}
+
+
