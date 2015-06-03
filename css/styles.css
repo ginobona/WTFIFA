@@ -99,7 +99,7 @@ button {
   border: 0;
   background: #FF0000;
   border-radius: 15px;
-  box-shadow: 0 2px 0 #000000;
+  box-shadow: 5px 2px 2px #000000;
   color: #fff;
   cursor: pointer;
   font: inherit;
