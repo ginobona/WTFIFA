@@ -1,0 +1,23 @@
+{
+  "name": "wtfifa",
+  "version": "1.0.0",
+  "description": "The WTFIF Bribe Estimator calculates how much money you will need to bribe FIFA in order for your country to host the World Cup.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginobona/WTFIFA.git"
+  },
+  "author": "gino and steve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ginobona/WTFIFA/issues"
+  },
+  "homepage": "https://github.com/ginobona/WTFIFA#readme",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
