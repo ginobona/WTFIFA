@@ -50,6 +50,7 @@ p {
 }
 
 #form1 {
+  height: 280px;
   width: 610px;
   border-radius: 15px;
   color: 255, 255, 255, 1;
@@ -82,7 +83,7 @@ p {
   margin-bottom: 10px;
 }
 
-button {
+.tada {
   border: 0;
   background: #FF0000;
   border-radius: 15px;
@@ -132,7 +133,6 @@ select {
 }
 
 .card .front {
-  backface-visibility: hidden;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -143,6 +143,17 @@ select {
 
 .card .back {
   backface-visibility: hidden;
+  height: 200px;
+  width: 610px;
+  border-radius: 15px;
+  color: 255, 255, 255, 1;
+  text-align: center;
+  text-shadow: 8px 14px 8px rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, .4);
+  border: black 2px solid;
+  padding: 2px;
+  margin: auto;
+  margin-left: 30px;
   transform: rotateY(180deg);
 }
 
